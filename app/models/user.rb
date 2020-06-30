@@ -1,3 +1,4 @@
 class User < ApplicationRecord
-  has_masny :todos
+  has_many :todos
+  validates :name,:email,:uid,presence: true
 end
